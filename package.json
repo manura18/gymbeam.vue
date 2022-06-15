@@ -7,7 +7,7 @@
     "preview": "vite preview --port 5050",
     "lint": "yarn lint:eslint && yarn lint:vue-tsc",
     "lint:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "lint:vue-tsc": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "lint:vue-tsc": "vue-tsc --noEmit",
     "commit": "cz",
     "postinstall": "husky install & npx rimraf ./node_modules/@types/react",
     "prepack": "pinst --disable",
@@ -16,6 +16,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@vueuse/components": "^8.6.0",
+    "eslint-plugin-tailwindcss": "^3.5.2",
     "pinia": "^2.0.13",
     "vue": "^3.2.33",
     "vue-router": "^4.0.14"
