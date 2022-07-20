@@ -1,29 +1,26 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+  image: { type: String, required: true },
+  title: { type: String, required: true },
+  text: { type: String, required: true },
+})
+</script>
 <template>
   <div class="w-[300px] h-[360px]">
     <a href="">
       <div>
-        <img
-          style="
-            display: block;
-            -webkit-user-select: none;
-            margin: auto;
-            background-color: hsl(0, 0%, 90%);
-            transition: background-color 300ms;
-          "
-          src="https://gymbeam.ua/blog/wp-content/uploads/2022/03/featured-tiramisu-400x209.png"
-        />
+        <img :src="image" />
       </div>
       <div class="font-bold">
         <span
-          >Фитнес рецепт: Восхитительный тирамису с высоким содержанием
-          белка.</span
+          >4 рецепта освежающих безалкогольных напитков: Мимоза, Мохито, Пина
+          колада и Сангрия</span
         >
       </div>
       <p class="text-sm">
-        Вы фанат итальянской кухни и кофейных десертов? Тогда вам точно стоит
-        приготовить этот восхитительный десерт тирамису. Кроме его вкуса и
-        кремовой консистенции, он также порадует вас высоким содержанием белка.
+        Лето не может проходить без освежающих напитков, которые имеют
+        восхитительный вкус и помогут вам освежиться. Сегодня мы приготовили
+        рецепты коктейлей Мохито, Пина Колада, Мимоза и Сангрия.
       </p>
     </a>
   </div>
