@@ -3,11 +3,12 @@ import { ref } from 'vue'
 import { vOnClickOutside } from '@vueuse/components'
 import { GArrow } from '@/assets/GArrow'
 import { GLanguage } from '@/assets/GLanguage'
+import { links } from './links'
+
 import logo from '@/assets/logo.png'
 import search from '@/assets/search.png'
 import cart from '@/assets/cart.svg'
 import user from '@/assets/user.svg'
-import { links } from './links'
 
 const showLanguage = ref(false)
 function closeModal() {
@@ -74,7 +75,7 @@ function closeModal() {
   </div>
   <div class="relative mx-auto max-w-[940px]">
     <ul class="flex list-none">
-      <li class="group mr-14" v-for="link in links">
+      <li class="group pb-2 mr-14" v-for="link in links">
         <a href="#" class="text-lg font-bold">{{ link.title }}</a>
         <ul
           :class="[
