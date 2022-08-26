@@ -3,7 +3,6 @@ import hourglass from '@/assets/hourglass.svg'
 import heart from '@/assets/heart.svg'
 import truck from '@/assets/truck.svg'
 import box from '@/assets/box.svg'
-
 import { links } from './links'
 </script>
 
