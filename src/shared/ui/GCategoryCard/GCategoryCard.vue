@@ -3,10 +3,11 @@ import hourglass from '@/assets/hourglass.svg'
 import heart from '@/assets/heart.svg'
 import truck from '@/assets/truck.svg'
 import box from '@/assets/box.svg'
+import { links } from './links'
 </script>
 
 <template>
-  <div class="flex justify-center max-w-[940px]">
+  <div class="flex justify-start pb-6 max-w-[940px]">
     <img class="pb-6 w-[30px]" :src="heart" />
     <div class="mr-3 ml-2">
       <span class="text-sm font-bold">6мл+</span>
@@ -27,5 +28,19 @@ import box from '@/assets/box.svg'
       <span class="font-bold">5000+ продуктів</span>
       <p class="text-[13px]">найширший асортимент</p>
     </div>
+  </div>
+  <div class="pb-3">
+    <span class="font-bold"
+      >Откройте для себя проверенные продукты, которые помогут вам достичь ваших
+      целей. Ваша цель:</span
+    >
+  </div>
+  <div class="inline-grid grid-cols-4 gap-4 max-w-[940px]">
+    <a class="flex pr-20 bg-[#e9e9e9]" v-for="(link, i) in links" :key="i">
+      <img class="w-[75px]" :src="link.image" />
+      <p class="pl-2 m-auto text-base font-bold leading-[15px] text-[#666]">
+        {{ link.title }}
+      </p>
+    </a>
   </div>
 </template>
