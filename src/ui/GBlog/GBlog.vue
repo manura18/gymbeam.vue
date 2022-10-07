@@ -6,7 +6,7 @@ defineProps({
 })
 </script>
 <template>
-  <div class="w-[300px] h-[360px]">
+  <div class="my-8 mr-[10px] w-[380px] h-[360px]">
     <a href="">
       <div>
         <img :src="image" />
