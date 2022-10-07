@@ -78,6 +78,7 @@ function closeModal() {
       <li class="group pb-2 mr-14" v-for="link in links">
         <a href="#" class="text-lg font-bold">{{ link.title }}</a>
         <ul
+          class="hover:absolute z-10 bg-white"
           :class="[
             'grid grid-cols-4',
             'absolute top-5 left-0 pt-3 mt-4',
@@ -87,7 +88,7 @@ function closeModal() {
             'group-hover:visible group-hover:opacity-100',
           ]"
         >
-          <li class="pl-3" v-for="column in link.columns">
+          <li class="pl-3 bg-white" v-for="column in link.columns">
             <ul class="pb-4" v-for="menu in column">
               <span class="hover:text-red-800">{{ menu.title }}</span>
               <li
