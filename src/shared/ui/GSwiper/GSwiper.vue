@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination, Autoplay } from 'swiper'
 import 'swiper/css'
@@ -10,15 +10,7 @@ export default {
     SwiperSlide,
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper)
-    }
-    const onSlideChange = () => {
-      console.log('slide change')
-    }
     return {
-      onSwiper,
-      onSlideChange,
       modules: [Autoplay, Pagination],
     }
   },
