@@ -29,7 +29,7 @@ defineProps({
       </div>
     </button>
     <div class="flex text-base font-semibold">
-      <a>MOXY power+Energy Drink 300 мл Gymbeam</a>
+      <a>{{ title }}</a>
     </div>
     <div class="flex">
       <GStar v-for="i in 5" :isActive="i <= rating / 20" :key="i" />
